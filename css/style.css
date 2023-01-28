@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container-centered{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main .container{
+    position: relative;
+    height: 100vh;
+}
+
+/* POSITION ABSOLUTE Start Navigation grid visualization and Full Screen view */
+main .navigation-bar-top{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 8px 0 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main .navigation-bar-top a{
+    background-color: rgb(94, 94, 94);
+    padding: 3px 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+main .navigation-bar-top .maximaze-icon{
+    margin: 0 4px;
+}
+
+/* POSITION ABSOLUTE End Navigation grid visualization and Full Screen view */
+
+main .container .participants-container{
+    background-color: black;
+    height: calc( 100% - 80px );   
+}
+
+main .container .participants-container .participants-cards {
+    width: 100%;
+    height: 100%;
+    
+    padding: 50px 60px 20px;
+}
+
+main .container .participants-container .participants-cards .row{
+    display: flex;
+    padding: 4px 0;
+    gap: 4px;
+    width: 100%;
+    height: calc( 100% / 5);
+    
+}
+
+main .container .participants-container .participants-cards .row .participant {
+    background-color: rgb(200, 242, 218);
+    border-radius: 10px;
+    width: calc( 100% / 7);
+    
+}
+
+main .navigation-bar-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    height: 80px;
+    gap: 20px;
+}
