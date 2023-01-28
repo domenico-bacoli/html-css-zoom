@@ -24,7 +24,7 @@ main .navigation-bar-top{
     display: flex;
     align-items: center;
     height: 20px;
-    padding: 8px 0 4px;
+    padding: 14px 0 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -32,9 +32,9 @@ main .navigation-bar-top{
 
 main .navigation-bar-top a{
     background-color: rgb(94, 94, 94);
-    padding: 3px 4px;
+    padding: 6px 8px;
     border-radius: 4px;
-    font-size: 10px;
+    font-size: 11px;
     color: white;
     text-decoration: none;
 }
@@ -42,9 +42,10 @@ main .navigation-bar-top a{
 main .navigation-bar-top .maximaze-icon{
     margin: 0 4px;
 }
-
 /* POSITION ABSOLUTE End Navigation grid visualization and Full Screen view */
 
+
+/* Start card participant */
 main .container .participants-container{
     background-color: black;
     height: calc( 100% - 80px );   
@@ -53,31 +54,123 @@ main .container .participants-container{
 main .container .participants-container .participants-cards {
     width: 100%;
     height: 100%;
-    
-    padding: 50px 60px 20px;
+    padding: 60px 60px 20px;
 }
 
 main .container .participants-container .participants-cards .row{
     display: flex;
+    gap: 6px;
     padding: 4px 0;
-    gap: 4px;
-    width: 100%;
     height: calc( 100% / 5);
-    
 }
 
-main .container .participants-container .participants-cards .row .participant {
-    background-color: rgb(200, 242, 218);
+main .container .participants-container .participants-cards .row .participant{
+    position: relative;
+    width: calc( 100% / 7); 
+}
+
+main .container .participants-container .participants-cards .row .participant img{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    width: calc( 100% / 7);
-    
 }
+/* End card participant */
 
+/* Start card participant position absolute item */
+main .container .participants-container .participants-cards .participant .microphone-status{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(93, 116, 117, 0.5);
+    border-radius: 0 4px 0 10px;
+    padding: 4px 6px;
+    font-size: 11px;
+    color: white;
+} 
+
+main .container .participants-container .participants-cards .participant .microphone-status i{
+    font-size: 13px;
+}
+/* End card participant position absolute item */
+
+/* Start Navigation bar Bottom */
 main .navigation-bar-bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(34, 34, 34);
     height: 80px;
+}
+
+main .navigation-bar-bottom .left-link{
+    display: flex;
+    padding-left: 16px;
     gap: 20px;
 }
+
+main .navigation-bar-bottom .left-link ul li,
+main .navigation-bar-bottom .center-link ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.6px;
+}
+
+main .navigation-bar-bottom .left-link .icon,
+main .navigation-bar-bottom .center-link .icon{
+    display: flex;
+    flex-direction: row;
+}
+
+main .navigation-bar-bottom .left-link .extend-icon,
+main .navigation-bar-bottom .center-link .extend-icon{
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 14px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+main .navigation-bar-bottom .left-link ul li i,
+main .navigation-bar-bottom .center-link ul li i{
+    font-size: 24px;
+}
+
+main .navigation-bar-bottom .left-link ul li span,
+main .navigation-bar-bottom .center-link ul li span{
+    padding-top: 6px;
+}
+
+main .navigation-bar-bottom a{
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+main .navigation-bar-bottom .center-link ul{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style-type: none;
+} 
+
+.fa-share-from-square{
+    color: rgb(85, 255, 85);
+}
+
+main .navigation-bar-bottom .right-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(74, 74, 74);
+    padding: 0 16px
+}
+
+main .navigation-bar-bottom .right-link a{
+    color: rgb(220, 0, 0);
+    font-size: 12px;
+}
+/* End Navigation bar Bottom */
